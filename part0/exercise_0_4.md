@@ -5,8 +5,8 @@
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
+    deactivate server
     server->>server: Redirect URL
-    desactivate server
     activate server
     server-->>browser: HTML document
     deactivate server
