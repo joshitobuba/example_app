@@ -4,9 +4,14 @@
     participant browser
     participant server
 
+    browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server-->>browser: URL Redirect
+    deactivate server
+
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
-    server-->>browser: HTML document
+    server-->>browser: URL Redirect
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
