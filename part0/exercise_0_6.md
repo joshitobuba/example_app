@@ -9,6 +9,6 @@
     server-->>browser: 201 Response HTTP (JSON Data included)
     deactivate server
 
-    note left of browser: The JavaScript code that fetches the JSON from the server
+    note left of browser: The browser register an event handler<br/>to handle the form's submit event
 
 ```
