@@ -1,1 +1,1 @@
-## Directory Part 1 Exercises
+## Part 1 Exercises Directory
